@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'SF Pro Bold', sans-serif; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página se necessário */
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.icon-tittle {
+    display: flex;
+    flex-direction: column;
+    background: #32BDD2;
+    width: 100%;
+    padding: 15px 31px 15px 35px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tittle {
+    font-size: 26px;
+    color: #fff;
+    -webkit-text-stroke: 1px #FFF;
+}
+
+.add-icon, .setting-icon {
+    cursor: pointer;
+}
+
+.total-tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background: #EDE7E7;
+    width: 100%;
+    height: 43px;
+}
+.total-text {
+    font-size: 18px;
+    color: #000;
+    margin: 0 0 0 26px;
+}
+
+.amount-text{
+    font-size: 18px;
+    color: #A0A4A5;
+    margin: 0 26px 0 0;
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        width: 100%;
+        max-width: 414px;
+        padding: 0;
+    }
+
+    .icon-tittle {
+        height: auto;
+    }
+}
