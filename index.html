@@ -34,6 +34,78 @@
                 </div>
             </div>
         </div>
+        <div class="modal-add" id="modal-add">
+            <div class="modal-content" id="modal-content">
+                <h1 class="title-modal-add">ADICIONAR PRODUTO</h1>
+                <div class="nome-produto">
+                    <h2>PRODUTO</h2>
+                    <input type="text" placeholder="Nome do Produto">
+                </div>
+                <div class="und-modal-add">
+                    <h2>UNIDADE</h2>
+                    <select type="option" placeholder="Selecione a unidade">
+                        <option value="0">Selecione a unidade</option>
+                        <option value="kg">KG</option>
+                        <option value="und">Und</option>
+                        <option value="dg">Dúzia</option>
+                    </select>
+                </div>
+                <div class="qtd-modal-add">
+                    <h2>QUANTIDADE</h2>
+                    <div class="quantidade-adicionar">
+                        <div class="button-less">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0C19.2533 0 14.6131 1.40758 10.6663 4.04473C6.71954 6.68188 3.6434 10.4302 1.8269 14.8156C0.0103988 19.201 -0.464881 24.0266 0.461164 28.6822C1.38721 33.3377 3.67299 37.6141 7.02945 40.9706C10.3859 44.327 14.6623 46.6128 19.3178 47.5388C23.9734 48.4649 28.799 47.9896 33.1844 46.1731C37.5698 44.3566 41.3181 41.2805 43.9553 37.3337C46.5924 33.3869 48 28.7467 48 24C48 20.8483 47.3792 17.7274 46.1731 14.8156C44.967 11.9038 43.1992 9.25804 40.9706 7.02944C38.742 4.80083 36.0962 3.033 33.1844 1.82689C30.2726 0.620778 27.1517 0 24 0ZM24 43.2C20.2026 43.2 16.4905 42.0739 13.3331 39.9642C10.1756 37.8545 7.71473 34.8559 6.26152 31.3475C4.80832 27.8392 4.4281 23.9787 5.16893 20.2543C5.90977 16.5298 7.73839 13.1087 10.4236 10.4235C13.1087 7.73838 16.5298 5.90976 20.2543 5.16892C23.9787 4.42809 27.8392 4.80831 31.3475 6.26151C34.8559 7.71471 37.8545 10.1756 39.9642 13.333C42.0739 16.4905 43.2 20.2026 43.2 24C43.2 29.0921 41.1772 33.9757 37.5765 37.5764C33.9758 41.1771 29.0922 43.2 24 43.2ZM33.6 21.6H14.4C13.7635 21.6 13.153 21.8529 12.703 22.3029C12.2529 22.753 12 23.3635 12 24C12 24.6365 12.2529 25.247 12.703 25.6971C13.153 26.1471 13.7635 26.4 14.4 26.4H33.6C34.2365 26.4 34.847 26.1471 35.2971 25.6971C35.7472 25.247 36 24.6365 36 24C36 23.3635 35.7472 22.753 35.2971 22.3029C34.847 21.8529 34.2365 21.6 33.6 21.6Z" fill="white"/>
+                            </svg>                        
+                        </div>
+                        <input type="number" id="quantidade" name="quantidade" min="0" max="100" value="0.0" step="0.1">
+                        <div class="button-more">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 2C11.87 2 2 11.87 2 24C2 36.13 11.87 46 24 46C36.13 46 46 36.13 46 24C46 11.87 36.13 2 24 2ZM24 42C14.07 42 6 33.93 6 24C6 14.07 14.07 6 24 6C33.92 6 42 14.07 42 24C42 33.93 33.92 42 24 42Z" fill="white"/>
+                                <path d="M26 22V12C26 10.9 25.1 10 24 10C22.9 10 22 10.9 22 12V22H12C10.9 22 10 22.9 10 24C10 25.1 10.9 26 12 26H22V36C22 37.1 22.9 38 24 38C25.1 38 26 37.1 26 36V26H36C37.1 26 38 25.1 38 24C38 22.9 37.1 22 36 22H26Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-add">
+                    <button type="button" disabled>ADICIONAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-change">
+            <div class="modal-content">
+                <h1 class="title-change-add">BATATA</h1>
+                <div class="quantidade-produto">
+                    <h2>QUANTIDADE</h2>
+                    <p>1,50 KG</p>
+                </div>
+                <div class="valor-unitario">
+                    <h2>VALOR UNITÁRIO</h2>
+                    <input type="text" placeholder="R$ 0,00">
+                </div>
+                <div class="valor-total">
+                    <h2>VALOR TOTAL</h2>
+                    <p>R$ 0,00</p>
+                </div>
+                <div class="button-add">
+                    <button type="button" disabled>ADICIONAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-settings">
+            <div class="modal-content">
+                <h1 class="title-settings">CONFIGURAÇÕES</h1>
+                <div class="button-reset">
+                    <button type="button">ZERAR SELEÇÕES</button>
+                </div>
+                <div class="button-reset">
+                    <button type="button">ZERAR</button>
+                </div>
+                <div class="button-reset">
+                    <button type="button">APAGAR TUDO</button>
+                </div>
+            </div>
+        </div>
     </header>
     
 </body>

@@ -78,3 +78,200 @@ header {
         height: auto;
     }
 }
+/*Tirar setas de input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 16px;
+    border-radius: 30px;
+    background: #32BDD2;
+    box-shadow: 0px 10px 14px 18px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 358px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-add button{
+    max-width: 100%;
+    width: 338px;
+    max-height: 100%;
+    height: 57px;
+    border: 0.5px solid #62AF3D;
+    border-radius: 20px;
+    background: #C6E9A3;
+    cursor: pointer;
+
+    font-size: 22px;
+    letter-spacing: 0.38%;
+    color: #62AF3D;
+    font-weight: bold;
+}
+
+/* Modal Additions */
+
+.modal-add{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 0.6);
+}
+
+.title-modal-add{
+    font-size: 22px;
+    color: #fff;
+}
+
+.nome-produto h2, .und-modal-add h2, .qtd-modal-add h2 {
+    font-size: 16px;
+    color: #707070;
+}
+
+.nome-produto input, .und-modal-add select{
+    width: 100%;
+    padding: 10px;
+    border:  none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    font-size: 30px;
+    letter-spacing: 0.38%;
+}
+
+.und-modal-add select option {
+    font-size: 30px;
+    letter-spacing: 0.38%;
+    color: #A89D9D;
+}
+
+.quantidade-adicionar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 8px 0;
+    
+}
+
+.quantidade-adicionar input {
+    width: 100%;
+    max-width: 83px;
+    height: 100%;
+    max-height: 50px;
+    border:  none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    font-size: 48px;
+    color: #707070;
+    text-align: center;
+}
+
+.quantidade-adicionar div {
+    cursor: pointer;
+}
+
+/* Fim Modal Additions */
+
+/* Modal change */
+
+.modal-change{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 0.6);
+}
+
+.title-change-add{
+    font-size: 22px;
+    color: #fff;
+}
+
+.quantidade-produto h2, .valor-unitario h2, .valor-total h2{
+    font-size: 16px;
+    color: #707070;
+}
+
+.quantidade-produto p, .valor-total p {
+    font-size: 26px;
+    color: #FFF;
+}
+
+.valor-unitario input{
+    width: 100%;
+    max-width: 338px;
+    height: 100%;
+    max-height: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 2px 0;
+    padding: 2px 15px;
+
+    font-size: 30px;
+}
+
+/*FIM Modal change */
+
+/* Modal settings */
+
+.modal-settings{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 0.6);
+}
+
+.title-settings{
+    font-size: 22px;
+    color: #fff;
+}
+
+.button-reset button{
+    max-width: 100%;
+    width: 338px;
+    max-height: 100%;
+    height: 57px;
+    border: 0.5px solid #E20300;
+    border-radius: 20px;
+    background: #FFFFFF;
+    cursor: pointer;
+
+    font-size: 22px;
+    letter-spacing: 0.38%;
+    color: #E20300;
+    font-weight: bold;
+}
+
+/*FIM Modal settings */
