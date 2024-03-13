@@ -9,11 +9,16 @@
     font-family: 'SF Pro Bold', sans-serif; 
 }
 
+body {
+    background-color: #f4f4f4;
+}
+
 header {
-    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos na página se necessário */
+    background-color: #32BDD2;
+    z-index: 1000;
 }
 
 .container {
@@ -25,7 +30,6 @@ header {
     display: flex;
     flex-direction: column;
     background: #32BDD2;
-    width: 100%;
     padding: 15px 31px 15px 35px;
 }
 
@@ -52,9 +56,11 @@ header {
     align-items: center;
     justify-content: center; 
     background: #EDE7E7;
-    width: 100%;
     height: 43px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+
 .total-text {
     font-size: 18px;
     color: #000;
@@ -67,7 +73,102 @@ header {
     margin: 0 26px 0 0;
 }
 
-@media screen and (max-width: 414px) {
+main .itens {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    max-height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .itens:active {
+    background-color: #EDE7E7;
+}
+
+
+main .itens .check-icon{
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px; 
+    cursor: pointer; 
+}
+
+.itens .informationProduct{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem 1rem 1rem 0;
+    font-weight: bold;
+}
+
+.itens .informationProduct .principalInformation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+
+    color: #000;
+    font-size: 22px;
+}
+
+.principalInformation .price {
+    opacity: 0.7;
+}
+
+.itens .informationProduct .secondaryInformation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+
+    color: #707070;
+    font-size: 16px;
+}
+
+.itens + .linha {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #C7C6C6;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+    main .itens .check-icon{
+        padding: 0 25px;  
+    }
+
+    .itens .informationProduct .principalInformation {
+        font-size: 16px; 
+    }
+
+    .itens .informationProduct .secondaryInformation {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main .itens .check-icon{
+        padding: 0 12.5px;  
+    }
+
+    .itens .informationProduct .principalInformation {
+        font-size: 14px; 
+    }
+
+    .itens .informationProduct .secondaryInformation {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
     .container {
         width: 100%;
         max-width: 414px;
@@ -117,6 +218,21 @@ input[type="number"]::-webkit-outer-spin-button {
     letter-spacing: 0.38%;
     color: #62AF3D;
     font-weight: bold;
+}
+
+.disabled{
+    background-color: #ccc; /* Cor de fundo cinza */
+    color: #999; /* Cor do texto cinza mais claro */
+    cursor: not-allowed; /* Cursor de proibido */
+    opacity: 0.5; /* Opacidade reduzida para indicar desabilitação */
+    pointer-events: none; /* Desativa eventos de mouse */
+    /* Outros estilos opcionais */
+    max-width: 100%;
+    width: 338px;
+    max-height: 100%;
+    height: 57px;
+    border: 0.5px solid #ccc;
+    border-radius: 20px;
 }
 
 /* Modal Additions */

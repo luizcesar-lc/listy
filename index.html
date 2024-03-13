@@ -34,7 +34,30 @@
                 </div>
             </div>
         </div>
-        <div class="modal-add" id="modal-add">
+    </header>
+    <main class="container" id="main">
+        <div class="itens">
+            <div class="check-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 0.75C9.38639 0.75 0.75 9.38424 0.75 20C0.75 30.6158 9.38639 39.25 20 39.25C30.6136 39.25 39.25 30.6158 39.25 20C39.25 9.38424 30.6136 0.75 20 0.75ZM20 36.1667C11.0866 36.1667 3.83333 28.9134 3.83333 20C3.83333 11.0866 11.0866 3.83333 20 3.83333C28.9134 3.83333 36.1667 11.0866 36.1667 20C36.1667 28.9134 28.9134 36.1667 20 36.1667Z" fill="#E20300" stroke="#E20300"/>
+                </svg>                
+            </div>
+            <div class="informationProduct">
+                <div class="principalInformation">
+                    <h2 class="product">Refrigerante</h2>
+                    <h2 class="price">R$ 14,00</h2>
+                </div>
+                <div class="secondaryInformation">
+                    <p class="unidadeProduto">2 UND</p>
+                    <p class="valorUnitario">Valor und: R$ 7,00</p>            
+                </div>              
+            </div>
+        </div>
+        <div class="linha"></div>
+        
+    </main>
+    <div class="modal-add" id="modal-add">
+        <form id="postAD" onsubmit="addPost(event)">
             <div class="modal-content" id="modal-content">
                 <h1 class="title-modal-add">ADICIONAR PRODUTO</h1>
                 <div class="nome-produto">
@@ -67,46 +90,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="button-add">
-                    <button type="button" disabled>ADICIONAR</button>
+                <div class="button-add disabled">
+                    <button type="button" type="submit" >ADICIONAR</button>
                 </div>
             </div>
-        </div>
-        <div class="modal-change">
-            <div class="modal-content">
-                <h1 class="title-change-add">BATATA</h1>
-                <div class="quantidade-produto">
-                    <h2>QUANTIDADE</h2>
-                    <p>1,50 KG</p>
-                </div>
-                <div class="valor-unitario">
-                    <h2>VALOR UNITÁRIO</h2>
-                    <input type="text" placeholder="R$ 0,00">
-                </div>
-                <div class="valor-total">
-                    <h2>VALOR TOTAL</h2>
-                    <p>R$ 0,00</p>
-                </div>
-                <div class="button-add">
-                    <button type="button" disabled>ADICIONAR</button>
-                </div>
+        </form>
+    </div>
+    <div class="modal-change">
+        <div class="modal-content">
+            <h1 class="title-change-add">BATATA</h1>
+            <div class="quantidade-produto">
+                <h2>QUANTIDADE</h2>
+                <p>1,50 KG</p>
+            </div>
+            <div class="valor-unitario">
+                <h2>VALOR UNITÁRIO</h2>
+                <input type="text" placeholder="R$ 0,00">
+            </div>
+            <div class="valor-total">
+                <h2>VALOR TOTAL</h2>
+                <p>R$ 0,00</p>
+            </div>
+            <div class="button-add">
+                <button type="button" disabled>ADICIONAR</button>
             </div>
         </div>
-        <div class="modal-settings">
-            <div class="modal-content">
-                <h1 class="title-settings">CONFIGURAÇÕES</h1>
-                <div class="button-reset">
-                    <button type="button">ZERAR SELEÇÕES</button>
-                </div>
-                <div class="button-reset">
-                    <button type="button">ZERAR</button>
-                </div>
-                <div class="button-reset">
-                    <button type="button">APAGAR TUDO</button>
-                </div>
+    </div>
+    <div class="modal-settings">
+        <div class="modal-content">
+            <h1 class="title-settings">CONFIGURAÇÕES</h1>
+            <div class="button-reset">
+                <button type="button">ZERAR SELEÇÕES</button>
+            </div>
+            <div class="button-reset">
+                <button type="button">ZERAR</button>
+            </div>
+            <div class="button-reset">
+                <button type="button">APAGAR TUDO</button>
             </div>
         </div>
-    </header>
+    </div>
     
 </body>
 </html>
