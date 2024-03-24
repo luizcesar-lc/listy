@@ -95,6 +95,7 @@ main .itens .check-icon{
     cursor: pointer; 
 }
 
+
 .itens .informationProduct{
     display: flex;
     flex-direction: column; 
@@ -204,7 +205,7 @@ input[type="number"]::-webkit-outer-spin-button {
     transform: translate(-50%, -50%);
 }
 
-.button-add button{
+.button {
     max-width: 100%;
     width: 338px;
     max-height: 100%;
@@ -218,21 +219,6 @@ input[type="number"]::-webkit-outer-spin-button {
     letter-spacing: 0.38%;
     color: #62AF3D;
     font-weight: bold;
-}
-
-.disabled{
-    background-color: #ccc; /* Cor de fundo cinza */
-    color: #999; /* Cor do texto cinza mais claro */
-    cursor: not-allowed; /* Cursor de proibido */
-    opacity: 0.5; /* Opacidade reduzida para indicar desabilitação */
-    pointer-events: none; /* Desativa eventos de mouse */
-    /* Outros estilos opcionais */
-    max-width: 100%;
-    width: 338px;
-    max-height: 100%;
-    height: 57px;
-    border: 0.5px solid #ccc;
-    border-radius: 20px;
 }
 
 /* Modal Additions */
@@ -255,7 +241,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: #fff;
 }
 
-.nome-produto h2, .und-modal-add h2, .qtd-modal-add h2 {
+.nome-produto h2, .und-modal-add h2, .qtd-modal-add h2, .valor-modal-add h2 {
     font-size: 16px;
     color: #707070;
 }
@@ -290,7 +276,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .quantidade-adicionar input {
     width: 100%;
-    max-width: 83px;
+    max-width: 125px;
     height: 100%;
     max-height: 50px;
     border:  none;
@@ -303,7 +289,36 @@ input[type="number"]::-webkit-outer-spin-button {
     text-align: center;
 }
 
-.quantidade-adicionar div {
+.valor-adicionar div {
+    cursor: pointer;
+}
+
+.valor-adicionar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 8px 0;
+    
+}
+
+.valor-adicionar input {
+    width: 100%;
+    max-width: 125px;
+    height: 100%;
+    max-height: 50px;
+    border:  none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    font-size: 48px;
+    color: #707070;
+    text-align: center;
+}
+
+.valor-adicionar div {
     cursor: pointer;
 }
 
